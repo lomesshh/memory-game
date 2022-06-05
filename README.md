@@ -41,16 +41,16 @@ A Memory game for kids whose age is between 5 to 8 years. This game will help th
 
 <table>
   <tr>
-    <td><img src="https://res.cloudinary.com/dgwzpbj4k/image/upload/v1648705428/shoemall/Screenshot_27_n6nq14.png" alt="mockup" /></td>
-    <td><img src="https://res.cloudinary.com/dgwzpbj4k/image/upload/v1648705427/shoemall/Screenshot_28_jgxs95.png" alt="mockups" /></td>
+    <td><img src="https://res.cloudinary.com/dgwzpbj4k/image/upload/v1654432416/memory-game/images/Screenshot_133_se8p4t.png" alt="mockup" /></td>
+    <td><img src="https://res.cloudinary.com/dgwzpbj4k/image/upload/v1654432411/memory-game/images/Screenshot_134_dtmvx0.png" alt="mockups" /></td>
   </tr>
   <tr>
-    <td><img src="https://res.cloudinary.com/dgwzpbj4k/image/upload/v1648705428/shoemall/Screenshot_36_vojv7y.png" alt="mockup" /></td>
-    <td><img src="https://res.cloudinary.com/dgwzpbj4k/image/upload/v1648705427/shoemall/Screenshot_29_bvowon.png" alt="mockups" /></td>
+    <td><img src="https://res.cloudinary.com/dgwzpbj4k/image/upload/v1654432415/memory-game/images/Screenshot_135_zo4wf0.png" alt="mockup" /></td>
+    <td><img src="https://res.cloudinary.com/dgwzpbj4k/image/upload/v1654432415/memory-game/images/Screenshot_139_nwhz7t.png" alt="mockups" /></td>
   </tr>
   <tr>
-    <td><img src="https://res.cloudinary.com/dgwzpbj4k/image/upload/v1648705426/shoemall/Screenshot_30_v3fl56.png" alt="mockup" /></td>
-    <td><img src="https://res.cloudinary.com/dgwzpbj4k/image/upload/v1648705427/shoemall/Screenshot_32_q3q3gb.png" alt="mockups" /></td>
+    <td><img src="https://res.cloudinary.com/dgwzpbj4k/image/upload/v1654432413/memory-game/images/Screenshot_136_k5dm5x.png" alt="mockup" /></td>
+    <td><img src="https://res.cloudinary.com/dgwzpbj4k/image/upload/v1654432408/memory-game/images/Screenshot_137_xbyj8w.png" alt="mockups" /></td>
   </tr>
 </table>
 <h2>📬 Contact</h2>
