@@ -4,9 +4,11 @@ import React from "react";
 import "stylesheets/homepage.css";
 
 const Homepage = () => {
-  const { currentList, score, matchCard, data, countDown, timer, totalCards } =
+  const { currentList, score, countDown, timer, totalCards, totalMatchCard } =
     useData();
 
+  // console.log(totalMatchCard + 2 === totalCards);
+  console.log(totalMatchCard.length, totalCards);
   return (
     <div className="homepage">
       <div className="homepage__header">
@@ -19,7 +21,7 @@ const Homepage = () => {
       </div>
 
       {/* Case: Time up but quiz Incomplete */}
-      {matchCard?.length !== data?.length && timer === 0 && (
+      {totalMatchCard.length !== totalCards && timer === 0 && (
         <div className="initial__counter">
           <h1>Time up ! Your total score is </h1>
           <h1 className="counter__number">{score} / 120</h1>
@@ -32,7 +34,7 @@ const Homepage = () => {
       )}
 
       {/* Case: Both quiz completed */}
-      {matchCard?.length === totalCards && (
+      {totalMatchCard.length === totalCards && (
         <div className="initial__counter">
           <h1>Nice work ! You passed all quizzes </h1>
         </div>
@@ -47,7 +49,7 @@ const Homepage = () => {
       )}
 
       {/* Display Image grid  */}
-      {timer > 0 && countDown < 1 && matchCard?.length !== totalCards && (
+      {timer > 0 && countDown < 1 && totalMatchCard.length !== totalCards && (
         <div className="quiz">
           <h1 className="quiz__heading">Match the cards</h1>
           <div className="quiz__grid">

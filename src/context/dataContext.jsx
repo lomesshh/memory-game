@@ -14,6 +14,7 @@ const DataProvider = ({ children }) => {
   const [currentList, setCurrentList] = useState([]);
   const [activeCard, setActiveCard] = useState([]);
   const [matchCard, setMatchCard] = useState([]);
+  const [totalMatchCard, setTotalMatchCard] = useState([]);
   const [count, setCount] = useState(0);
   const [score, setScore] = useState(0);
 
@@ -127,6 +128,8 @@ const DataProvider = ({ children }) => {
           setStartTimer,
           totalCards,
           startTimer,
+          totalMatchCard,
+          setTotalMatchCard,
         }}
       >
         {children}

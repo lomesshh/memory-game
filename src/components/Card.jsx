@@ -18,6 +18,8 @@ const Card = ({ card, index }) => {
     setInitialTimer,
     setTimer,
     startTimer,
+    totalMatchCard,
+    setTotalMatchCard,
   } = useData();
 
   // Fliping the card
@@ -32,7 +34,14 @@ const Card = ({ card, index }) => {
           setScore((prev) => prev + 20);
           // check if all card matched or not
           if (matchCard?.length + 2 === currentList?.length) {
+            setTotalMatchCard([
+              ...totalMatchCard,
+              ...matchCard,
+              ...activeCard,
+              index,
+            ]);
             setActiveCard([]);
+            setMatchCard([]);
             setScore(0);
             setCount((prev) => prev + 1);
             setcountDown(5);
@@ -52,7 +61,6 @@ const Card = ({ card, index }) => {
 
   // display image wrapper on card images
   const displayImg = () => {
-    console.log(index);
     const IMG_WRAPPER =
       "https://res.cloudinary.com/dgwzpbj4k/image/upload/v1654351354/memory-game/images/cardcover_urlvva.png";
 
