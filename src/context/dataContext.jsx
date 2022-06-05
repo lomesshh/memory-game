@@ -79,7 +79,7 @@ const DataProvider = ({ children }) => {
     return () => {
       clearInterval(timerRef.current);
     };
-  }, [startTimer, timer]);
+  }, [startTimer, timer, totalCards, matchCard]);
 
   // For fetching all data from json file
   useEffect(() => {
