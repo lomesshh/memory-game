@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://shoemall.netlify.app/" rel="noopener" target="_blank"><img width="150" src="https://res.cloudinary.com/dgwzpbj4k/image/upload/v1654431259/memory-game/images/android-chrome-512x512_jvrktc.png" alt="Material-UI logo"></a></p>
+  <a href="https://braincells-challenge.netlify.app/" rel="noopener" target="_blank"><img width="150" src="https://res.cloudinary.com/dgwzpbj4k/image/upload/v1654431259/memory-game/images/android-chrome-512x512_jvrktc.png" alt="Material-UI logo"></a></p>
 </p>
 
 <h1 align="center"><b>Memory Game</b></h1>
@@ -34,7 +34,7 @@ A Memory game for kids whose age is between 5 to 8 years. This game will help th
 - Fully responsive
 
 ## Live
-[Memory Game](https://shoemall.netlify.app/) 🚀
+[Memory Game](https://braincells-challenge.netlify.app/) 🚀
 
 
 ## Glimpses of Memory Game 🙈 :
