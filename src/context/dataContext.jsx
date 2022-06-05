@@ -21,7 +21,7 @@ const DataProvider = ({ children }) => {
   // All Timers initial states
   const [countDown, setcountDown] = useState(5);
   const [initialTimer, setInitialTimer] = useState(8);
-  const [timer, setTimer] = useState(30);
+  const [timer, setTimer] = useState(90);
 
   // Refs for getting current state of timer
   const countDownRef = useRef(null);
@@ -105,31 +105,57 @@ const DataProvider = ({ children }) => {
     );
   }, [data, count]);
 
+  // Fliping the card
+  const flipCard = (index) => {
+    if (startTimer) {
+      if (activeCard.length === 0) {
+        setActiveCard([index]);
+      } else if (activeCard.length === 1) {
+        // check if both card mathcing or not
+        if (currentList[activeCard[0]] === currentList[index]) {
+          setMatchCard([...matchCard, activeCard[0], index]);
+          setScore((prev) => prev + 20);
+          // check if all card matched or not then reset all for next quiz
+          if (matchCard?.length + 2 === currentList?.length) {
+            setTotalMatchCard([
+              ...totalMatchCard,
+              ...matchCard,
+              ...activeCard,
+              index,
+            ]);
+            setActiveCard([]);
+            setMatchCard([]);
+            setScore(0);
+            setCount((prev) => prev + 1);
+            setcountDown(5);
+            setStartInitialTimer(false);
+            setStartTimer(false);
+            setInitialTimer(8);
+            setTimer(90);
+          }
+        }
+        setActiveCard([...activeCard, index]);
+        setTimeout(() => {
+          setActiveCard([]);
+        }, 500);
+      }
+    }
+  };
+
   return (
     <div>
       <dataContext.Provider
         value={{
-          data,
           currentList,
-          setCount,
           score,
-          setScore,
           activeCard,
-          setActiveCard,
           matchCard,
-          setMatchCard,
-          setcountDown,
           countDown,
           initialTimer,
-          setInitialTimer,
           timer,
-          setTimer,
-          setStartInitialTimer,
-          setStartTimer,
           totalCards,
-          startTimer,
           totalMatchCard,
-          setTotalMatchCard,
+          flipCard,
         }}
       >
         {children}

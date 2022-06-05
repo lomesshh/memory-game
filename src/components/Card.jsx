@@ -3,61 +3,7 @@ import "../stylesheets/homepage.css";
 import { useData } from "context/dataContext";
 
 const Card = ({ card, index }) => {
-  const {
-    currentList,
-    activeCard,
-    setActiveCard,
-    setCount,
-    setScore,
-    matchCard,
-    setMatchCard,
-    setcountDown,
-    initialTimer,
-    setStartInitialTimer,
-    setStartTimer,
-    setInitialTimer,
-    setTimer,
-    startTimer,
-    totalMatchCard,
-    setTotalMatchCard,
-  } = useData();
-
-  // Fliping the card
-  const flipCard = (index) => {
-    if (startTimer) {
-      if (activeCard.length === 0) {
-        setActiveCard([index]);
-      } else if (activeCard.length === 1) {
-        // check if both card mathcing or not
-        if (currentList[activeCard[0]] === currentList[index]) {
-          setMatchCard([...matchCard, activeCard[0], index]);
-          setScore((prev) => prev + 20);
-          // check if all card matched or not
-          if (matchCard?.length + 2 === currentList?.length) {
-            setTotalMatchCard([
-              ...totalMatchCard,
-              ...matchCard,
-              ...activeCard,
-              index,
-            ]);
-            setActiveCard([]);
-            setMatchCard([]);
-            setScore(0);
-            setCount((prev) => prev + 1);
-            setcountDown(5);
-            setStartInitialTimer(false);
-            setStartTimer(false);
-            setInitialTimer(8);
-            setTimer(30);
-          }
-        }
-        setActiveCard([...activeCard, index]);
-        setTimeout(() => {
-          setActiveCard([]);
-        }, 500);
-      }
-    }
-  };
+  const { activeCard, matchCard, initialTimer, flipCard } = useData();
 
   // display image wrapper on card images
   const displayImg = () => {

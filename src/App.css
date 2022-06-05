@@ -3,9 +3,7 @@
 
 :root {
   --background-color: #1E292E;
-  --primary-color: #392f5a; 
   --text-color: #441306;
-  --box-shadow: rgba(0, 0, 0, 0.3);
 }
 
 body, .App {
@@ -22,7 +20,6 @@ body, .App {
   font-family: "Nunito", sans-serif;
   margin: 0;
   padding: 0;
-  /* transition: 0.5s; */
 }
 
 @media screen and (max-width: 700px) {
