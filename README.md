@@ -27,11 +27,13 @@ A Memory game for kids whose age is between 5 to 8 years. This game will help th
 
 
 ## 🚀 Features
-- User can check the image initially
-- User will get 90 sec for each quiz
-- Final result will generate on basis of total score
-- Timer for each quiz
-- Fully responsive
+- This website is fully responsive.
+- User will get few seconds to check all the images at starting.
+- User will get 90 seconds to find all matching pairs.
+- After completing first quiz user will automatically redirect to next quiz.
+- If ser fail to finish then quiz qill auto submit and then user can see the score.
+- If user score less that 60 ( Poor remark ).
+- If user score more that 60 ( Good remark ).
 
 ## Live
 [Memory Game](https://braincells-challenge.netlify.app/) 🚀
